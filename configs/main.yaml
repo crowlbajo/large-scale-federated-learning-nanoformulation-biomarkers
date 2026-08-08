@@ -1,0 +1,40 @@
+experiment:
+  name: fedicbs_primary
+  seeds: [1, 2, 3, 4, 5]
+  rounds: 89
+  encoder_rounds: 28
+  clients: 9
+  held_out_fraction: 0.2
+  bootstrap_replicates: 5000
+  candidate_features: 128
+  expected_invariant_features: 21
+  minimum_site_samples: 80
+  alpha: 0.05
+  privacy_epsilon: 5.0
+  privacy_delta: 0.00001
+  l2_regularization: 0.001
+  image_size: 224
+  patient_dimension: 43
+  drug_dimension: 15
+  interaction_dimension: 70
+  fused_dimension: 128
+  cross_attention_heads: 8
+  fusion_layers: 4
+  trainable_parameters: 12400000
+  batch_size: null
+  learning_rate: null
+  optimizer: null
+  scheduler: null
+  warmup_steps: null
+  weight_decay: null
+  precision: null
+hardware:
+  gpu: NVIDIA A100 80GB
+  gpus_per_client: 8
+  clients: 9
+  seeds: 5
+  reported_gpu_hours: 630
+data:
+  release: TB Portals v8.2
+  cases: 19150
+  countries: [Belarus, Georgia, Moldova, Ukraine, Romania, Kazakhstan, Azerbaijan, Nigeria, India]

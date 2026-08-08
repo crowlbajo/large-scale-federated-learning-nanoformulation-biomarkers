@@ -1,0 +1,14 @@
+name: fedicbs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10.14
+  - pytorch=2.3.0
+  - torchvision=0.18.0
+  - pytorch-cuda=12.1
+  - rdkit=2024.03.1
+  - pip=24.0
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,15 @@
+torch==2.3.0
+torchvision==0.18.0
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.0
+statsmodels==0.14.2
+flwr==1.7.0
+omegaconf==2.3.0
+pandas==2.2.2
+pydicom==2.4.4
+Pillow==10.3.0
+rdkit==2024.3.1
+transformers==4.41.2
+open-clip-torch==2.24.0
+safetensors==0.4.3

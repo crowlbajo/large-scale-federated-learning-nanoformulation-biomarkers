@@ -1,0 +1,5 @@
+TB Portals registered-user release v8.2 | https://tbportals.niaid.nih.gov | TB Portals Data Use Agreement
+TBX11K | https://mmcheng.net/tb/ | Creative Commons Attribution 4.0
+Montgomery County and Shenzhen chest radiographs | https://data.lhncbc.nlm.nih.gov/public/Tuberculosis-Chest-X-ray-Datasets/ | NLM public release
+ChEMBL v34 | https://www.ebi.ac.uk/chembl/ | Creative Commons Attribution-ShareAlike 3.0
+WHO Global Tuberculosis Programme data | https://www.who.int/teams/global-tuberculosis-programme/data | WHO terms of use

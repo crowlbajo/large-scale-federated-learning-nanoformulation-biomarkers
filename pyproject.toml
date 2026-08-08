@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools==69.5.1", "wheel==0.43.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "large-scale-federated-biomarkers"
+version = "1.0.0"
+requires-python = ">=3.10,<3.12"
+license = {text = "MIT"}
+dependencies = [
+  "torch==2.3.0",
+  "torchvision==0.18.0",
+  "numpy==1.26.4",
+  "scipy==1.13.1",
+  "scikit-learn==1.5.0",
+  "statsmodels==0.14.2",
+  "flwr==1.7.0",
+  "omegaconf==2.3.0",
+  "pandas==2.2.2",
+  "pydicom==2.4.4",
+  "Pillow==10.3.0",
+  "rdkit==2024.3.1",
+  "transformers==4.41.2",
+  "open-clip-torch==2.24.0",
+  "safetensors==0.4.3"
+]
+
+[project.scripts]
+fedicbs-train = "fedicbs.entrypoints.train:main"
+fedicbs-evaluate = "fedicbs.entrypoints.evaluate:main"
+fedicbs-prepare = "fedicbs.entrypoints.prepare:main"
+
+[tool.setuptools]
+package-dir = {"" = "code"}
+
+[tool.setuptools.packages.find]
+where = ["code"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["fedicbs"]
+mypy_path = "code"
